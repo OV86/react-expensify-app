@@ -49,7 +49,7 @@ class ExpenseForm extends React.Component {
     e.preventDefault(); // prevent the default page reload behaviour on submit
 
     if (!this.state.description || !this.state.amount) {
-      this.setState(() => ({ error: 'Please provide description and amount.' }));
+      this.setState(() => ({ error: 'Please provide both description and amount.' }));
     } else {
       this.setState(() => ({ error: '' }));
       this.props.onSubmit({
