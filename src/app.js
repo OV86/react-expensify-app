@@ -9,10 +9,11 @@ import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css'; // needs to be imported before own styles. Makes the website look same in all browsers. Resets default styles.
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
+import './firebase/firebase';
 
 const store = configureStore();
 
-console.log(store.getState());
+// console.log(store.getState());
 
 const jsx = (
   <Provider store={store}>
