@@ -9,9 +9,9 @@ app.use(express.static(publicPath));
 
 // match all unmatched routes as routing is handled by react-router
 app.get('*', (req, res) => {
-  res.sendFile(path.join(publicPath, 'index.html'));
+    res.sendFile(path.join(publicPath, 'index.html'));
 });
 
 app.listen(port, () => {
-  console.log('Server is running');
+    console.log('Server is running');
 });
