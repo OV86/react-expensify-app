@@ -1,3 +1,3 @@
 export default (expenses) => {
-  return expenses.reduce((acc, cur) => acc + cur.amount, 0);
+    return expenses.reduce((acc, cur) => acc + cur.amount, 0);
 };
